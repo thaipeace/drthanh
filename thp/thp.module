@@ -4,7 +4,6 @@
  * Implement hook_preprocess_page
  */
 function thp_preprocess_page(&$vars) {
-  dsm($vars);
   if ($vars['is_front']) {
     drupal_add_css(drupal_get_path('module', 'thp') . '/css/intro.css');
     drupal_add_js(drupal_get_path('module', 'thp') . '/js/intro.js');
