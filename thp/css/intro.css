@@ -7,7 +7,57 @@ and open the template in the editor.
     Created on : 26-Jul-2016, 10:24:31
     Author     : April
 */
+body {
+	overflow: hidden;
+}
 
-.layout-swap {
-    padding: 0;
+#index {
+	position: relative;	
+	cursor:url;
+}
+
+.container {
+	background: linear-gradient(to bottom, #103164, #156790);
+	background: -webkit-linear-gradient(to bottom, #103164,#156790);
+	background: -o-linear-gradient(to bottom, #103164, #156790);
+	background: -moz-linear-gradient(to bottom, #103164, #156790);
+	border: 0;
+	padding: 100%;
+  position: absolute;
+	opacity: 0.5;
+	z-index:2;
+}
+
+.myVideo {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.btn_skip {
+  position: absolute;
+  margin: 43% 0% 0% 49%;
+  z-index: 2;
+  border: none;
+}
+
+.logo {
+	position: absolute;
+	z-index: 2;
+}
+
+.img_logoDr {
+	position:absolute;
+	margin: 9% 0% 0% 50%;
+	z-index:2;
+}
+
+.line_skip {
+	background-image: url("http://localhost/thp/sites/default/files/line_skip.png");
+  background-repeat: top bottom;
+  height: 100px;
+  margin: 35% 1% 1% 52%;
+  width: 1px;
+  position: absolute;
+  z-index: 2;
 }
