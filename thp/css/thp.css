@@ -8,13 +8,31 @@ and open the template in the editor.
     Author     : April
 */
 html,body{
-    height:100%;
+  height:100%;
 }
 
 .layout-swap {
-    padding: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.page-node-2 {
+  background: url('../images/homepagebg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .page-node-2 article {
-    text-align: center;
+  text-align: center;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
