@@ -8,24 +8,15 @@ and open the template in the editor.
     Author     : April
 */
 html,body{
-  height:100%;
+    height:100%;
 }
 
 .layout-swap {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-body.page-node-2 {
-  background: url('../images/homepagebg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    padding: 0 !important;
 }
 
 .page-node-2 article {
-  text-align: center;
+    text-align: center;
 }
 
 @keyframes dash {
@@ -35,4 +26,40 @@ body.page-node-2 {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+.btn:hover {
+  text-decoration: none;
 }
