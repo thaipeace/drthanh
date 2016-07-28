@@ -12,20 +12,32 @@
   // To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.intro = {
     attach: function (context, settings) {
-	$('#btn_skip').click(function(){
-		document.getElementById('videoskip1').pause();
-		$('#videoskip1').hide();
-		$('#btn_skip').hide();
-		$('#logo').hide();
-		$('.img_logoDr').hide();
-		$('#line_skip').hide();
-		document.getElementById('videoskip2').play();
-		function timeOut(){
-			$(window).attr('location','home');
+      
+      function timeOut(){
+        $('.skip-wrapper').fadeIn('fast');
 			};
-		setTimeout(timeOut,5000);
-		});
-			}
-		}
+      setTimeout(timeOut,6000);
+
+      $('#btn_skip').click(function(){
+        document.getElementById('videoskip1').pause();
+        $('.video1-wrapper').hide();
+        $('.skip-wrapper').hide();
+        $('.img_logoDr').hide();
+        
+        $('.video2-wrapper').fadeIn("fast");
+        document.getElementById('videoskip2').play();
+        document.getElementById('videoskip2').addEventListener(
+          'ended',
+          function(){
+            $('.video2-wrapper').fadeOut("fast", function() {
+              window.location = 'home';
+            });
+          },
+          false
+        );
+        
+      });
+    }
+  }
 
 })(jQuery, Drupal, this, this.document);
