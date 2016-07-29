@@ -20,6 +20,10 @@ html,body{
   text-align: center;
 }
 
+.page-node-2 {
+  background: url('../images/homepagebg.jpg') no-repeat center center fixed; 
+}
+
 @keyframes dash {
   from {
     stroke-dashoffset: 1000;
