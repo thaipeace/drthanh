@@ -8,6 +8,8 @@ function thp_preprocess_page(&$vars) {
     drupal_add_css(drupal_get_path('module', 'thp') . '/css/intro.css');
     drupal_add_js(drupal_get_path('module', 'thp') . '/js/intro.js');
   }
+	drupal_add_css(drupal_get_path('module', 'thp') . '/css/tam.css');
+  drupal_add_js(drupal_get_path('module', 'thp') . '/js/tam.js');
   drupal_add_css(drupal_get_path('module', 'thp') . '/css/thp.css');
   drupal_add_js(drupal_get_path('module', 'thp') . '/js/thp.js');
 }
