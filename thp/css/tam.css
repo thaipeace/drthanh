@@ -1,47 +1,9 @@
 
-
-#block-block-1 {
-	display: none;
+.field-items .field-item p {
+	margin: 0.5em;
 }
 
-#block-block-2 {
-	position: absolute;
-    left: 0;
-    top: 0;
-    width: 5%;
-	background-image: url('http://localhost/thp/sites/default/files/bgmenu_0.jpg');
-}
-
-.field-items {
-    position: relative;
-    padding: 0;
-    left: 4%;
-    padding-left: 0;
-    text-align: center;
-    width: 95%;
-}
-
-.menu1 {
-	display: block;
-}
-
-.menu2 {
-	display: block;
-}
-
-.menu3 {
-	display: block;
-}
-
-.menu4 {
-	display: block;
-}
-
-.field-items p {
-	margin:0.5em !important;
-}
-
-.field-item {
+.node2 .field-item {
 	position: relative;
 }
 
