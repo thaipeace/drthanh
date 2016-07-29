@@ -8,15 +8,16 @@ and open the template in the editor.
     Author     : April
 */
 html,body{
-    height:100%;
+  height:100%;
+  font-family: 'utm_neo_sans_intelregular';
 }
 
 .layout-swap {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .page-node-2 article {
-    text-align: center;
+  text-align: center;
 }
 
 @keyframes dash {
