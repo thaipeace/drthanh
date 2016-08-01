@@ -29,7 +29,7 @@
         document.getElementById('videoskip2').addEventListener(
           'ended',
           function(){
-            $('.video2-wrapper').fadeOut("fast", function() {
+            $('.video2-wrapper').fadeOut(1000, 'swing', function() {
               window.location = 'home';
             });
           },

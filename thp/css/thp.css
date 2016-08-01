@@ -7,13 +7,44 @@ and open the template in the editor.
     Created on : 26-Jul-2016, 10:24:31
     Author     : April
 */
-html,body{
+html,body {
   height:100%;
   font-family: 'utm_neo_sans_intelregular';
 }
 
+body.no-sidebars {
+  font-family: 'utm_neo_sans_intelregular';
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+body.no-sidebars a {
+}
+
+.layout-center {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header {
+  position: absolute;
+  left: 86px;
+  top: 10px;
+  z-index: 1;
+}
+
+.front .header {
+  left: 30px;
+}
+
+main.layout-3col__full {
+  padding: 0;
+  margin: 0;
+}
+
 .layout-swap {
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 .page-node-2 article {
@@ -21,7 +52,15 @@ html,body{
 }
 
 .page-node-2 {
-  background: url('../images/homepagebg.jpg') no-repeat center center fixed; 
+  background: url('../images/homepagebg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.layout-swap__top {
+  display: none;
 }
 
 @keyframes dash {
@@ -67,4 +106,175 @@ html,body{
 }
 .btn:hover {
   text-decoration: none;
+}
+
+.block-wrapper {
+  position: relative;
+}
+
+/** Menu ***/
+#block-block-2 {
+  margin: 0 0 0 56px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: calc(100% - 56px);
+  display: none;
+}
+
+#block-block-2.active {
+}
+
+#block-block-2 .block-wrapper {
+  height: 100vh;
+}
+
+#block-block-2 .block-wrapper > div {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+#block-block-2 .block-wrapper > div a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#block-block-2 .block-wrapper div.menu1 {
+  background: url('../images/m1.jpg') 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#block-block-2 .block-wrapper div.menu2 {
+  background: url('../images/m2.jpg') 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#block-block-2 .block-wrapper div.menu3 {
+  background: url('../images/m3.jpg') 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#block-block-2 .block-wrapper div.menu4 {
+  background: url('../images/m4.jpg') 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#block-block-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 56px;
+  background: #d11212 url('../images/serpa-leftitem.jpg') 0 56px repeat-x;
+  display: flex;
+  z-index: 3;
+}
+
+#menu-bnt {
+  background: url('../images/icon_menu.png') 16px center no-repeat;
+  cursor: pointer;
+  height: 56px;
+}
+
+#menu-bnt.active {
+  background: #f0a001 url('../images/icon_menu_active.png') 16px center no-repeat;
+}
+
+#fb-bnt { 
+  background: url('../images/serpa-leftitem.jpg') 0 0 repeat-x;
+  bottom: 56px;
+  height: 56px;
+}
+
+#fb-bnt a { 
+  background: url('../images/icon_fb.png') 19px center no-repeat;
+  display: block;
+  height: 56px;
+}
+  
+#youtube-bnt {
+  background: url('../images/serpa-leftitem.jpg') 0 0 repeat-x;
+  bottom: 0;
+  height: 56px;
+}
+
+#youtube-bnt a {
+  background: url('../images/icon-youtube.png') 12px center no-repeat;
+  display: block;
+  height: 56px;
+}
+
+#copy-right {
+  bottom: 128px;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space:nowrap;
+  padding: 0 0 0 10px;
+  color: #FFFFFF;
+}
+
+.left-item {
+  width: 56px;
+  position: absolute;
+}
+/** End Menu ***/
+
+.node-2 .bnt-try img {
+  margin: 0 auto;
+  display: block;
+}
+
+.node-2 .bnt-try .img_exper1 {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.node-2 .bnt-try .img_exper1 img {
+   opacity:0.2;
+   transition: all 0.3s ease-in;
+   cursor: pointer;
+}
+
+.node-2 .bnt-try .img_exper1 .mask {
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  border: 27px solid rgba(255,255,255,0.2);
+  border-top: 26px solid rgba(255,255,255,0.2);
+  box-sizing: border-box;
+  transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+  width: 216px;
+  height: 53px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.node-2 .bnt-try .img_exper1:hover .mask {
+  border:0px double rgba(255,255,255,0.7);
+  opacity:0;
+  visibility:hidden;
+}
+
+.node-2 .bnt-try .img_exper1:hover img {
+   opacity:1;
 }

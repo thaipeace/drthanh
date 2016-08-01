@@ -13,8 +13,16 @@
   Drupal.behaviors.services = {
     attach: function (context, settings) {
 
-      // Place your code here.
-      
+      // Menu click
+      $('#menu-bnt').click(function(){
+        if ($('#block-block-2.active').length < 1) {
+          $('#block-block-2').addClass('active').show("slide", {direction: "left" }, 300);
+          $(this).addClass('active');
+        }else {
+          $('#block-block-2').removeClass('active').hide("slide", {direction: "left" }, 300);
+          $(this).removeClass('active');
+        }
+      });
     }
   };
   
