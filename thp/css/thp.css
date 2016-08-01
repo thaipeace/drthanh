@@ -18,7 +18,8 @@ body.no-sidebars {
   line-height: 20px;
 }
 
-body.no-sidebars a {
+body.not-logged-in  {
+  overflow: hidden;
 }
 
 .layout-center {
@@ -277,4 +278,8 @@ main.layout-3col__full {
 
 .node-2 .bnt-try .img_exper1:hover img {
    opacity:1;
+}
+
+body.page-node-3 {
+  background-size: cover;
 }
