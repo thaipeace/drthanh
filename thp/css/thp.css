@@ -174,6 +174,46 @@ main.layout-3col__full {
   background-size: cover;
 }
 
+#block-block-2 .block-wrapper > div .label {
+  font-family: 'utm_bebasregular';
+  margin: 0 0 7px 0;
+}
+
+#block-block-2 .block-wrapper > div .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 30px 0;
+}
+
+#block-block-2 .block-wrapper > div .desc {
+  margin: 0 0 20px 0;
+  padding: 30px 0 0 0;
+  font-size: 80%;
+}
+
+#block-block-2 .block-wrapper > div .view {
+  border: 3px solid #FFFFFF;;
+  display: inline-block;
+}
+
+#block-block-2 .block-wrapper > div .view a {
+  display: block;
+  font-family: 'utm_bebasregular';
+  padding: 5px 35px;
+  background: #f0a001;
+  text-decoration: none;
+}
+
+#block-block-2 .block-wrapper > div .serpa {
+  height: 1px;
+  width: 40px;
+  background: #FFFFFF;
+}
+
+#block-block-2 .block-wrapper > div > div {
+  padding: 80px 0 0 80px;
+} 
+
 #block-block-1 {
   position: absolute;
   top: 0;
@@ -182,7 +222,7 @@ main.layout-3col__full {
   width: 56px;
   background: #d11212 url('../images/serpa-leftitem.jpg') 0 56px repeat-x;
   display: flex;
-  z-index: 3;
+  z-index: 11;
 }
 
 #menu-bnt {
