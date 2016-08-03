@@ -626,3 +626,156 @@ body.page-node-3  {
 	opacity: 1;
 	margin-bottom: -1%;
 }
+
+/*---pag-node-4 ----experience intruction--*/
+body.page-node-4 {
+	background-color: #919191;
+}
+.wp_experience {
+	margin: 0 auto;
+	position: relative;
+	width: 768px;
+}
+
+.hexagon {
+  position: relative;
+  width: 200px; 
+  height: 130px;
+  background-color: #eeeeee;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 60px solid #eeeeee;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top:60px solid #eeeeee;
+}
+
+.hexagon.p1 {
+	position: absolute;
+    left: 0;
+    top: 37px;
+}
+
+.hexagon.p2 {
+	position: absolute;
+	left: 132px;
+    top: 208px;
+	display: block;
+}
+
+.hexagon.p3 {
+	right: 0;
+    top: 28px;
+    position: absolute;
+    display: block;
+}
+
+.hexagon.p4 {
+	position: absolute;
+	right: 120px;
+    top: 207px;
+	display: block;
+}
+
+.hexagon:hover {
+	background-color: #f1a001;
+}
+
+.hexagon:hover:before {
+    bottom: 100%;
+    border-bottom: 60px solid #f1a001;
+}
+
+.hexagon:hover:after {
+	top: 100%;
+	width: 0;
+	border-top:60px solid #f1a001;
+}
+
+.hexagon >.desc_hexagon {
+	color: #000000;
+	font-size: 17px;
+	text-align: center;
+	position: relative;
+	margin:25% 0 0 0;
+}
+
+.hexagon:hover >.desc_hexagon {
+	color: #ffffff;
+}
+
+.person_experience {
+	background: url('http://localhost/thp/sites/default/files/person_experience.png')no-repeat bottom center fixed;
+	text-align: center;
+    height: 100vh;
+}
+
+.hexagon.p1 >.icon_ex {
+	position: absolute;
+	margin: -13px 0 24px 74px;
+}
+
+.hexagon.p2 >.icon_ex {
+	position: absolute;
+	margin: -13px 0 0 44px;
+}
+
+.hexagon.p3 >.icon_ex {
+	position: absolute;
+	margin: -10px 0 0 80px;
+
+}
+
+.hexagon.p4 >.icon_ex {
+	position: absolute;
+	margin: -2px 0 0 80px;
+}
+
+.btn_process1 {
+	text-align: center;
+    border: 2px solid #ffffff;
+    padding: 6px 30px;
+    position: absolute;
+    left: auto;
+    right: 137px;
+    top: 320px;
+    opacity: 0.5;
+	transition:all 0.1s ease-in;
+	cursor: pointer;
+}
+
+.btn_process1 >span, .btn_process1 >img {
+	font-size: 14px;
+	display: inline-block;
+}
+
+.btn_process1:hover {
+	opacity: 1.5;
+}
+
+.wp_experience > svg {
+	position: absolute;
+	top: 10px;
+	z-index: -1;
+}
+@media (max-width: 1200px)
+{
+	.btn_process1 {
+		display: none;
+	}
+}

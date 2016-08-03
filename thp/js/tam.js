@@ -124,6 +124,53 @@
     $('#ubl8').animate({top:"119%"},10508);
     $('#ubl9').animate({top:"129%"},10509);
     $('#ubl10').animate({top:"145%"},10510);
+
+    //node-4
+    /*
+   * width Int, height Int: offset of container
+   * path String: html5 path format. Ex. M200 0 L40 25 L100 200
+   * style Array: svg path style colection
+   *  EX: 
+   *  style = [
+        "fill:none",
+        "stroke:black",
+        "stroke-width:1",
+        "stroke-linejoin:round",
+        "stroke-linecap:round",
+        "stroke-dasharray:1000",
+        "animation: dash 3s 1 linear forwards",
+        "stroke:#000000"
+      ];
+   */
+   function pathAnimate(path, style, width, height) {
+    var svg = '';
+    svg = "<svg width='" + width + "' height='" + height + "' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve'>";
+    svg += "<path d='" + path + "' style='" + style.join(";") + "' />";
+    svg += "</svg>";
+
+    return svg;
+   }
+   var style = [
+        "fill:none",
+        "stroke:black",
+        "stroke-width:1",
+        "stroke-linejoin:round",
+        "stroke-linecap:round",
+        "stroke-dasharray:1000",
+        "animation: dash 5s 1 linear forwards",
+        "stroke:#ffffff"
+      ];
+    $('.wp_experience').append(pathAnimate('M100 304 L100 500 L289 500', style, 768, screen.height));
+    $('.wp_experience').append(pathAnimate('M232 475 L232 540 L270 540', style, 768, screen.height));
+    $('.wp_experience').append(pathAnimate('M548 474 L548 500 L480 500', style, 768, screen.height));
+    $('.wp_experience').append(pathAnimate('M667 295 L667 350 L650 350', style, 768, screen.height));
+    $('.wp_experience').append(pathAnimate('M667 295 L667 330 L768 330', style, 768, screen.height));
+
+    
+    
+   
+
+
     }
   };
 
