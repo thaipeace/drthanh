@@ -478,3 +478,134 @@ body.page-node-4 {
 		display: none;
 	}
 }
+
+#block-block-3 .block-wrapper {
+ height: 100vh;
+    width: 94px;
+    float: right;
+    background-color: #d11212;
+}
+.r_item_header {
+ text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    height: 62px;
+    line-height: 14px;
+}
+
+.r_item_header>span {
+ position: relative;
+    top: 15px;
+    margin: 0px;
+}
+
+.r_item_header:hover {
+ background: #f1a001;
+}
+
+.wp_r_item {
+ width: 100%;
+    height: 56px;
+}
+.wp_r_item > a .r_item {
+ width: 100%;
+ height: 56px;
+}
+
+.wp_r_item > a {
+ display: block;
+}
+
+.wp_r_item:hover {
+ width: 100%;
+    height: 56px;
+    background: url('/thp/sites/default/files/icon_Preparation_Fuel.png') no-repeat center center;
+    background-color: #a20202;
+}
+
+.tooltip_item {
+ position: relative;
+ display: inline-block;
+}
+
+.tooltip_item .tooltip_item_text {
+ visibility: hidden;
+ background-color: #eeeeee;
+ font-size: 12px;
+ border-radius: 3px;
+ padding: 5px 10px;
+ color: #000000;
+ position: absolute;
+ top: 15px;
+    right: 100px;
+ width: auto;
+ white-space: nowrap;
+}
+
+.tooltip_item_text:after {
+ content: '';
+ background: url('/thp/sites/default/files/arrow_r.png')no-repeat;
+ position: absolute;
+ top: 7px;
+ right: -30px;
+ width: 14px;
+ height: 14px;
+}
+
+.tooltip_item:hover .tooltip_item_text {
+ visibility: visible;
+}
+.tooltipClass_r_item {
+ border: 0 solid #eeeeee;
+ padding: 5px 10px;
+ background-color: #eeeeee;
+}
+
+.r_item1 {
+ background: url('/thp/sites/default/files/icon_bottled_check.png') no-repeat center center;
+}
+
+.r_item2 {
+ background: url('/thp/sites/default/files/icon_Filling_sterile.png') no-repeat center center; 
+}
+
+.r_item3 {
+ background: url('/thp/sites/default/files/icon_mixing.png') no-repeat center center;  
+}
+
+.r_item4 {
+ background: url('/thp/sites/default/files/icon_heat_treatment.png') no-repeat center center; 
+}
+
+.r_item5 {
+ background: url('/thp/sites/default/files/icon_extraction.png') no-repeat center center;
+}
+
+.r_item6 {
+ background: url('/thp/sites/default/files/icon_centrifugal_filter.png') no-repeat center center;
+}
+
+.r_item7 {
+ background: url('/thp/sites/default/files/icon_extraction.png') no-repeat center center;
+}
+
+.r_item8 {
+ background: url('/thp/sites/default/files/icon_testingProcess.png') no-repeat center center;
+}
+
+.r_item9 {
+ background: url('/thp/sites/default/files/icon_Preparation_Fuel.png') no-repeat center center;
+}
+
+.r_item10 {
+ background: url('/thp/sites/default/files/icon_sound.png') no-repeat center center;
+}
+.r_item9:after, .r_item_header:after {
+    content: '';
+    background: url('/thp/sites/default/files/line_center_r.jpg')repeat-x;
+    width: 94px;
+    height: 2px;
+    top: 62px;
+    left: 0;
+    position: absolute;
+  }
