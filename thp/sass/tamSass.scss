@@ -1,0 +1,69 @@
+.class_hexagon {
+    position: relative;
+    width: 200px; 
+    height: 130px;
+    background-color: #eeeeee;
+    margin: 86.60px 0;
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: 60px solid #eeeeee;
+  }
+
+  &:after {
+    top: 100%;
+    width: 0;
+    border-top:60px solid #eeeeee;
+  }
+}
+canvas {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.wp_fct1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  }
+
+.hxg_fct_extend {
+  background: url('http://localhost/thp/sites/default/files/icon_hxg1_1.png')no-repeat;
+  width: 46px;
+  height: 47px;
+  position: absolute;
+  &:hover {
+  background:#eeeeee;
+  position: absolute;
+  @extend .class_hexagon;
+  }
+}
+
+.hxg_fct1 {
+  top: 300px;
+  left:200px;
+  @extend .hxg_fct_extend;
+}
+
+.hxg_fct2 {
+  top: 150px;
+  left: 800px;
+  @extend .hxg_fct_extend;
+}
