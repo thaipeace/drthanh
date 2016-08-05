@@ -1,0 +1,55 @@
+.class_hexagon, .hxg_fct_extend:hover, .hxg_fct1:hover, .hxg_fct2:hover {
+  position: relative;
+  width: 200px;
+  height: 130px;
+  background-color: #eeeeee;
+  margin: 86.60px 0; }
+  .class_hexagon:before, .hxg_fct_extend:hover:before, .hxg_fct1:hover:before, .hxg_fct2:hover:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; }
+  .class_hexagon:after, .hxg_fct_extend:hover:after, .hxg_fct1:hover:after, .hxg_fct2:hover:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; }
+  .class_hexagon:before, .hxg_fct_extend:hover:before, .hxg_fct1:hover:before, .hxg_fct2:hover:before {
+    bottom: 100%;
+    border-bottom: 60px solid #eeeeee; }
+  .class_hexagon:after, .hxg_fct_extend:hover:after, .hxg_fct1:hover:after, .hxg_fct2:hover:after {
+    top: 100%;
+    width: 0;
+    border-top: 60px solid #eeeeee; }
+
+canvas {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute; }
+
+.wp_fct1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+.hxg_fct_extend, .hxg_fct1, .hxg_fct2 {
+  background: url("http://localhost/thp/sites/default/files/icon_hxg1_1.png") no-repeat;
+  width: 46px;
+  height: 47px;
+  position: absolute; }
+  .hxg_fct_extend:hover, .hxg_fct1:hover, .hxg_fct2:hover {
+    background: #eeeeee;
+    position: absolute; }
+
+.hxg_fct1 {
+  top: 300px;
+  left: 200px; }
+
+.hxg_fct2 {
+  top: 150px;
+  left: 800px; }
+
+/*# sourceMappingURL=tamSass.css.map */

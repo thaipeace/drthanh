@@ -66,9 +66,20 @@
       $('.wp_experience').append(pathAnimate('M768 330 L667 330 L667 295', style, 768, screen.height));
       
       // Build 360image
-      var container = 'lightbox';
-      var materialPaths = [];
+      var container = 'three-container';
+      var materialPaths = [
+        '/thp/sites/default/files/px.jpg',
+        '/thp/sites/default/files/nx.jpg',
+        '/thp/sites/default/files/py.jpg',
+        '/thp/sites/default/files/ny.jpg',
+        '/thp/sites/default/files/pz.jpg',
+        '/thp/sites/default/files/nz.jpg'
+
+      ];
       build360Img(container, materialPaths);
+
+      // Fix asetic title
+      $('article').append($('.field-collection-item-field-parts > div > .field-name-field-title'));
     }
   };
 
